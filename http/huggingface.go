@@ -33,7 +33,7 @@ type hfSSEEvent struct {
 }
 
 // GET /api/hf/token-status
-var hfTokenStatusHandler = withUser(func(w http.ResponseWriter, r *http.Request, d *data) (int, error) {
+var hfTokenStatusHandler = withUser(func(w http.ResponseWriter, r *http.Request, _ *data) (int, error) {
 	return renderJSON(w, r, map[string]bool{"hasToken": os.Getenv("HF_TOKEN") != ""})
 })
 
@@ -176,7 +176,7 @@ var hfUploadHandler = withUser(func(w http.ResponseWriter, r *http.Request, d *d
 })
 
 // PUT /api/hf/token {"token":"hf_xxx"}
-var hfSetTokenHandler = withUser(func(w http.ResponseWriter, r *http.Request, d *data) (int, error) {
+var hfSetTokenHandler = withUser(func(w http.ResponseWriter, r *http.Request, _ *data) (int, error) {
 	var body struct {
 		Token string `json:"token"`
 	}
