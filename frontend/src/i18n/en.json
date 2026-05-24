@@ -305,5 +305,28 @@
     "minutes": "Minutes",
     "seconds": "Seconds",
     "unit": "Time Unit"
+  },
+  "huggingface": {
+    "title": "Upload to Hugging Face",
+    "tokenLabel": "Hugging Face Token",
+    "tokenPlaceholder": "hf_...",
+    "repoIdLabel": "Repository",
+    "repoIdPlaceholder": "username/my-model",
+    "repoTypeLabel": "Repository Type",
+    "pathPrefixLabel": "Path in repository",
+    "pathPrefixHint": "(optional)",
+    "pathPrefixPlaceholder": "e.g. checkpoints/v2",
+    "commitMsgLabel": "Commit message",
+    "commitMsgPlaceholder": "Upload via FileBrowser",
+    "filesToUpload": "Files to upload ({count})",
+    "uploadBtn": "Upload",
+    "uploading": "Uploading…",
+    "abort": "Abort",
+    "complete": "Upload Complete",
+    "completeMsg": "All files have been uploaded successfully.",
+    "failed": "Upload Failed",
+    "retry": "Back to settings",
+    "unknownError": "An unknown error occurred.",
+    "uploadToHf": "Upload to Hugging Face"
   }
 }

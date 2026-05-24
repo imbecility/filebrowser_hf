@@ -19,6 +19,12 @@
             show="share"
           />
           <action
+            v-if="headerButtons.huggingface"
+            icon="cloud_upload"
+            label="t('huggingface.uploadToHf')"
+            show="huggingface"
+          />
+          <action
             v-if="headerButtons.rename"
             icon="mode_edit"
             :label="t('buttons.rename')"
@@ -97,6 +103,12 @@
         :label="t('buttons.share')"
         show="share"
       />
+        <action
+          v-if="headerButtons.huggingface"
+          icon="cloud_upload"
+          :label="t('huggingface.uploadToHf')"
+          show="huggingface"
+        />
       <action
         v-if="headerButtons.rename"
         icon="mode_edit"
@@ -268,6 +280,12 @@
             :label="t('buttons.share')"
             show="share"
           />
+            <action
+              v-if="headerButtons.huggingface"
+              icon="cloud_upload"
+              :label="t('huggingface.uploadToHf')"
+              show="huggingface"
+            />
           <action
             v-if="headerButtons.rename"
             icon="mode_edit"
@@ -486,6 +504,7 @@ const headerButtons = computed(() => {
       authStore.user?.perm.download,
     move: fileStore.selectedCount > 0 && authStore.user?.perm.rename,
     copy: fileStore.selectedCount > 0 && authStore.user?.perm.create,
+    huggingface: fileStore.selectedCount > 0 && authStore.user?.perm.download,
   };
 });
 

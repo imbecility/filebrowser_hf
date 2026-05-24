@@ -1,6 +1,6 @@
 module github.com/filebrowser/filebrowser/v2
 
-go 1.25.0
+go 1.26
 
 require (
 	github.com/asdine/storm/v3 v3.2.1
@@ -11,6 +11,7 @@ require (
 	github.com/golang-jwt/jwt/v5 v5.3.1
 	github.com/gorilla/mux v1.8.1
 	github.com/gorilla/websocket v1.5.3
+	github.com/imbecility/go-huggingface-hub v0.1.0
 	github.com/jellydator/ttlcache/v3 v3.4.0
 	github.com/maruel/natural v1.3.0
 	github.com/marusama/semaphore/v2 v2.5.0
@@ -23,11 +24,9 @@ require (
 	github.com/spf13/cobra v1.10.2
 	github.com/spf13/pflag v1.0.10
 	github.com/spf13/viper v1.21.0
-	github.com/stretchr/testify v1.11.1
 	github.com/tomasen/realip v0.0.0-20180522021738-f0c99a92ddce
 	go.etcd.io/bbolt v1.4.3
 	golang.org/x/crypto v0.50.0
-	golang.org/x/image v0.39.0
 	golang.org/x/text v0.36.0
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1
 	gopkg.in/yaml.v3 v3.0.1
@@ -76,9 +75,10 @@ require (
 	go.uber.org/atomic v1.11.0 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
 	go4.org v0.0.0-20230225012048-214862532bf5 // indirect
+	golang.org/x/image v0.39.0 // indirect
 	golang.org/x/net v0.52.0 // indirect
 	golang.org/x/sync v0.20.0 // indirect
-	golang.org/x/sys v0.43.0 // indirect
+	golang.org/x/sys v0.44.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
